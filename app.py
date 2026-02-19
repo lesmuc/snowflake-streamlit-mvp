@@ -2,11 +2,19 @@
 
 from __future__ import annotations
 
+import os
+
 import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()  # Picks up .env in local dev; no-op on Streamlit Cloud
+
+# On Streamlit Community Cloud, credentials come from st.secrets (not .env).
+# Inject them into os.environ so SnowflakeClient can read them unchanged.
+for _k, _v in st.secrets.items():
+    if _k not in os.environ:
+        os.environ[_k] = str(_v)
 
 from data.queries import (  # noqa: E402
     query_all_menu,
