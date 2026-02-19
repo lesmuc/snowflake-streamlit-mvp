@@ -12,7 +12,7 @@ A production-quality Streamlit dashboard that queries live Snowflake data from t
 
 - **Snowflake-native features** — VARIANT columns, `LATERAL FLATTEN` for nested JSON
 - **Clean architecture** — separated data, processing, and UI layers
-- **Full test coverage** — pytest unit tests, no Snowflake connection required
+- **Full test coverage** — 31 pytest unit tests, no Snowflake connection required
 - **CI/CD** — GitHub Actions with ruff linting + pytest
 
 ![Dashboard Screenshot](assets/screenshot.png)
@@ -112,7 +112,7 @@ snowflake-streamlit-mvp/
 ├── processing/
 │   └── transform.py            # clean, calc_kpis, top_items, profit_by_group
 ├── tests/
-│   └── test_transform.py       # 12 pytest unit tests, no Snowflake needed
+│   └── test_transform.py       # 31 pytest unit tests, no Snowflake needed
 ├── setup/
 │   └── load_menu_data.sql      # One-time Snowsight script to create & populate MENU
 ├── .github/workflows/ci.yml    # Lint + test on every push/PR
