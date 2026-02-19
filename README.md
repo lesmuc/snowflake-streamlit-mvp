@@ -1,6 +1,6 @@
 # Snowflake + Streamlit MVP — Tasty Bytes Menu Analytics
 
-[![CI](https://github.com/udoschm/snowflake-streamlit-mvp/actions/workflows/ci.yml/badge.svg)](https://github.com/udoschm/snowflake-streamlit-mvp/actions/workflows/ci.yml)
+[![CI](https://github.com/lesmuc/snowflake-streamlit-mvp/actions/workflows/ci.yml/badge.svg)](https://github.com/lesmuc/snowflake-streamlit-mvp/actions/workflows/ci.yml)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-app-mvp-fessbzy7tdavkyb3rtt4uv.streamlit.app/)
 ![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?logo=snowflake&logoColor=white)
@@ -38,7 +38,7 @@ A production-quality Streamlit dashboard that queries live Snowflake data from t
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/udoschm/snowflake-streamlit-mvp.git
+git clone https://github.com/lesmuc/snowflake-streamlit-mvp.git
 cd snowflake-streamlit-mvp
 pip install -r requirements.txt
 ```
