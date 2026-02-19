@@ -84,8 +84,9 @@ class SnowflakeClient:
             return pd.DataFrame(rows, columns=columns)
         except Exception as exc:
             schema_hint = (
-                " Hint: verify that `SNOWFLAKE_SCHEMA` matches your actual schema name "
-                "(e.g. UDO_LOAD_SAMPLE_DATA_FROM_S3)."
+                f" Hint: verify that `SNOWFLAKE_SCHEMA` matches your actual schema name "
+                f"(currently: `{self._schema}`). "
+                "If the MENU table is missing, run `setup/load_menu_data.sql` in Snowsight."
                 if "does not exist" in str(exc).lower() or "unknown" in str(exc).lower()
                 else ""
             )
